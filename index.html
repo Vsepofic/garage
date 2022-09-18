@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
 
-  <title>Главная</title>
+  <title>Garage</title>
 </head>
 
   <body>
@@ -37,94 +37,144 @@
     </nav>
     <div class="header__contact contact-header">
       <div class="contact-header__location location">
-        <img
-          class="location__adress-img"
-          src="images/icons/location.png"
-          alt="location"
-        />
+        <img class="location__adress-img" src="images/icons/location.png" alt="location" />
         <div class="location__adress">
-          <span class="location__adress-text"
-            ><b>Москва </b><br />
-            ул. Московская, 15</span
-          >
+          <span class="location__adress-text"><b>Москва </b><br />
+            ул. Московская, 15</span>
           <a href="#contact" class="location__adress-link"><span>Как проехать</spa></a>
         </div>
       </div>
-      <div class="contact-header__phone">
-        <a href="tel:+79772628266" class="contact-header__phone-link">
+      <div class="contact-header__phon">
+        <!-- <a href="tel:+79772628266" class="contact-header__phone-link">
           <div class="contact-header__phone-img">
             <img src="images/icons/call.png" alt="phone" />
           </div>
-          <div class="contact-header__phone-tel">+7(977)262 82 66</div>
-        </a>
-        <button class="contact-header__button button">
-          <span>Заказать звонок</span>
-          <img src="images/icons/call-btn.png" alt="icon" />
-        </button>
+          <div class="contact-header__phone-tel"> +7(977)262 82 66</div>
+        </a> -->
+        <div class="action-header__phones phones-header">
+          <div class="phones-header__items">
+            <div class="phones-header__item">
+              <a href="tel:79772628266" class="contact-header__phone-link">
+                <div class="contact-header__phone-img">
+                  <img src="images/icons/call.png" alt="phone" />
+                </div>
+                <div class="contact-header__phone-tel"> +7(977)262 82 66</div>
+              </a>
+
+              <button class="phones-header__arrow phones-header__arrow--icon" type="button">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.11323 9.2309L0.324654 2.00808C-0.107404 1.54862 -0.107404 0.803689 0.324655 0.344454C0.756329 -0.114819 1.45646 -0.114819 1.8881 0.344454L7.89495 6.73553L13.9016 0.34464C14.3334 -0.114632 15.0335 -0.114632 15.4652 0.34464C15.897 0.803913 15.897 1.54881 15.4652 2.00827L8.6765 9.23108C8.46056 9.46072 8.17784 9.57541 7.89498 9.57541C7.61199 9.57541 7.32906 9.4605 7.11323 9.2309Z"
+                    fill="#E8AA31" />
+                </svg>
+              </button>
+              <ul class="phones-header__list">
+                <li class="phones-header__list-item">
+                  <a href="tel:79772628267" class="contact-header__phone-link">
+                    <div class="contact-header__phone-img">
+                      <img src="images/icons/call.png" alt="phone" />
+                    </div>
+                    <div class="contact-header__phone-tel"> +7(977)262 82 67</div>
+                  </a>
+                </li>
+                <li class="phones-header__list-item">
+                  <a href="tel:79772628268" class="contact-header__phone-link">
+                    <div class="contact-header__phone-img">
+                      <img src="images/icons/call.png" alt="phone" />
+                    </div>
+                    <div class="contact-header__phone-tel"> +7(977)262 82 68</div>
+                  </a>
+                </li>
+                <li class="phones-header__list-item">
+                  <a href="tel:79772628269" class="contact-header__phone-link">
+                    <div class="contact-header__phone-img">
+                      <img src="images/icons/call.png" alt="phone" />
+                    </div>
+                    <div class="contact-header__phone-tel"> +7(977)262 82 69</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="contact-header__button button popup-link" href="#popup-2">
+            <span>Заказать звонок</span>
+            <img src="images/icons/call-btn.png" alt="icon" />
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
   <button type="button" class="mobile-nav-button">
-						<span class="mobile-nav-button__icon"></span>
-					</button>
+    <span class="mobile-nav-button__icon"></span>
+  </button>
 </div>
 <div class="mobile-nav">
-      <div class="header__logo">
-      <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="images/logo/logo.png" alt="logo" />
-        <div class="header__logo-text">GARAGE</div>
-      </a>
+  <div class="header__logo">
+    <a class="header__logo-link" href="#">
+      <img class="header__logo-img" src="images/logo/logo.png" alt="logo" />
+      <div class="header__logo-text">GARAGE</div>
+    </a>
+  </div>
+  <nav class="mobile-nav__list">
+    <ul>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#servis">Услуги</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#about">О нас</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#cooperation">Сотрудничество</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#contact">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__location location">
+    <img class="location__adress-img" src="images/icons/location.png" alt="location" />
+    <div class="location__adress">
+      <span class="location__adress-text"><b>Москва </b><br />
+        ул. Московская, 15</span>
+      <a href="#contact" class="location__adress-link"><span>Как проехать</spa></a>
     </div>
-			<nav class="mobile-nav__list">
-				<ul>
-					<li class="mobile-nav__item">
-          <a class="mobile-nav__link" href="#">Услуги</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link" href="#">О нас</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link" href="#">Сотрудничество</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link" href="#">Контакты</a>
-        </li>
-				</ul>
-			</nav>
-      <div class="mobile-nav__location location">
-        <img
-          class="location__adress-img"
-          src="images/icons/location.png"
-          alt="location"
-        />
-        <div class="location__adress">
-          <span class="location__adress-text"
-            ><b>Москва </b><br />
-            ул. Московская, 15</span
-          >
-          <a href="" class="location__adress-link"><span>Как проехать</spa></a>
-        </div>
+  </div>
+  <div class="mobile-nav__phone">
+    <a href="tel:79772628266" class="mobile-nav__phone-link">
+      <div class="mobile-nav__phone-img">
+        <img src="images/icons/call.png" alt="phone" />
       </div>
-			<div class="mobile-nav__phone">
-        <a href="tel:+79772628266" class="mobile-nav__phone-link">
-          <div class="mobile-nav__phone-img">
-            <img src="images/icons/call.png" alt="phone" />
-          </div>
-          <div class="mobile-nav__phone-tel">+7(977)262 82 66</div>
-        </a>
-        <button class="mobile-nav__button button">
-          <span>Заказать звонок</span>
-          <img src="images/icons/call-btn.png" alt="icon" />
-        </button>
+      <div class="mobile-nav__phone-tel">+7(977)262 82 66</div>
+    </a>
+    <a href="tel:79772628267" class="mobile-nav__phone-link">
+      <div class="mobile-nav__phone-img">
+        <img src="images/icons/call.png" alt="phone" />
       </div>
-		</div>
-</header>
+      <div class="mobile-nav__phone-tel">+7(977)262 82 67</div>
+    </a>
+    <a href="tel:79772628268" class="mobile-nav__phone-link">
+      <div class="mobile-nav__phone-img">
+        <img src="images/icons/call.png" alt="phone" />
+      </div>
+      <div class="mobile-nav__phone-tel">+7(977)262 82 68</div>
+    </a>
+    <a href="tel:79772628269" class="mobile-nav__phone-link">
+      <div class="mobile-nav__phone-img">
+        <img src="images/icons/call.png" alt="phone" />
+      </div>
+      <div class="mobile-nav__phone-tel">+7(977)262 82 69</div>
+    </a>
+  </div>
+</div></header>
       <main class="main">
         <article>
           <section><div class="main-top__container">
   <div class="main-top__body">
     <h1 class="main-title">Автозапчасти</h1>
-    <div class="main-top__subtitle">для легковых авто всех марок</div>
+    <div class="main-top__subtitle">
+      для легковых авто всех марок
+    </div>
     <ul class="main-top__subscription">
       <li class="main-top__text">
         Детали моторной группы и трансмиссии, электрика, кузов, ходовая
@@ -137,7 +187,7 @@
       </li>
     </ul>
     <div class="main-top__buttons">
-      <a class="main-top__btn button" href="#">
+      <a class="main-top__btn button popup-link" href="#popup-1">
         <span>Подбор запчастей</span>
         <img src="images/services-top/i-3-btn.png" alt="icon" />
       </a>
@@ -259,130 +309,7 @@
       </div>
     </div>
   </div>
-</div>
-</section>
-        </article>
-        <article>
-          <section><div class="services__container" id="servis">
-  <div class="services__body">
-    <h2 class="services__title">Услуги</h2>
-    <div class="services__slider">
-      <div class="services__swiper">
-        <div class="services__slide slide-services">
-          <article class="services-card">
-            <div class="services-card__body">
-              <div class="services-card__img">
-                <img src="images/services/z01.png" alt="auto part" />
-              </div>
-              <div class="services-card__title">Двигатель</div>
-            </div>
-          </article>
-        </div>
-        <div class="services__slide slide-services">
-          <article class="services-card">
-            <div class="services-card__body">
-              <div class="services-card__img">
-                <img src="images/services/z02.png" alt="auto part" />
-              </div>
-              <div class="services-card__title">Электрика</div>
-            </div>
-          </article>
-        </div>
-        <div class="services__slide slide-services">
-          <article class="services-card">
-            <div class="services-card__body">
-              <div class="services-card__img">
-                <img src="images/services/z03.png" alt="auto part" />
-              </div>
-              <div class="services-card__title">Ходовая часть</div>
-            </div>
-          </article>
-        </div>
-        <div class="services__slide slide-services">
-          <article class="services-card">
-            <div class="services-card__body">
-              <div class="services-card__img">
-                <img src="images/services/z04.png" alt="auto part" />
-              </div>
-              <div class="services-card__title">Трансмиссия</div>
-            </div>
-          </article>
-        </div>
-        <div class="services__slide slide-services">
-          <article class="services-card">
-            <div class="services-card__body">
-              <div class="services-card__img">
-                <img src="images/services/z05.png" alt="auto part" />
-              </div>
-              <div class="services-card__title">Детали кузова</div>
-            </div>
-          </article>
-        </div>
-        <div class="services__slide slide-services">
-          <article class="services-card">
-            <div class="services-card__body">
-              <div class="services-card__img">
-                <img src="images/services/z06.png" alt="auto part" />
-              </div>
-              <div class="services-card__title">Механизмы управления</div>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="services__dotts"></div>
-    </div>
-    <div class="services__buttons">
-      <a class="services__btn button" href="#">
-        <span>Подбор запчастей</span>
-        <img src="images/services-top/i-3-btn.png" alt="icon" />
-      </a>
-      <a class="services__btn button" href="#">
-        <span>Заказать звонок</span>
-        <img src="images/icons/call-btn.png" alt="icon" />
-      </a>
-    </div>
-  </div>
-</div>
-</section>
-        </article>
-        <article>
-          <section><div class="about__container" id="about">
-  <div class="about__body">
-    <h2 class="about__title">О нас</h2>
-    <div class="about__text">
-      <p>
-        Качественные автозапчасти - выгодное вложение. Мы уже
-        <span>20 лет</span> на рынке автозапчастей и знаем как решить любые
-        вопросы, связанные с ремонтом и уходом за вашим автомобилем. Накопленный
-        нами немалый опыт поможет вам в вашем выборе автозапчастей.
-        Стремительный рост автопарка наряду с чередующимися кризисами делают
-        нашу работу все более востребованной.
-      </p>
-    </div>
-  </div>
-  <div class="about__video">
-    <div class="story-video">
-      
-      <video
-          id="my-player"
-          class="video-js story-video-object video-story"
-          preload="auto"
-          controls
-          muted
-          loop
-          poster="images/video/a1.png"
-          data-setup='{}'>
-        <source src="files/Rammstein.webm" type="video/webm"></source>
-        <source src="files/Rammstein.mp4" type="video/mp4"></source>
-        </p>
-      </video>
-    </div>
-    <div class="story-video-img">
-      <img src="images/bg-after/b01.png" alt="auto part" />
-    </div>
-  </div>
-</div>
-</section>
+</div></section>
         </article>
         <article>
           <section><div class="brand__container">
@@ -633,70 +560,176 @@
 </section>
         </article>
         <article>
-          <section><div class="cooperation__container" id="cooperation">
-  <div class="cooperation__body">
-    <h2 class="cooperation__title">Сотрудничество</h2>
-    <div class="cooperation__text">
-      Приглашаем к сотрудничеству <span>СТО</span>. Гарантируем специальные
-      условия и приятные бонусы. Для получения детальной информации заполните
-      форму ниже и мы вам отправим интересное предложение сотрудничества.
+          <section><div class="about__container" id="about">
+  <div class="about__body">
+    <h2 class="about__title">О нас</h2>
+    <div class="about__text">
+      <p>
+        Качественные автозапчасти - выгодное вложение. Мы уже
+        <span>20 лет</span> на рынке автозапчастей и знаем как решить любые
+        вопросы, связанные с ремонтом и уходом за вашим автомобилем. Накопленный
+        нами немалый опыт поможет вам в вашем выборе автозапчастей.
+        Стремительный рост автопарка наряду с чередующимися кризисами делают
+        нашу работу все более востребованной.
+      </p>
     </div>
   </div>
-  <div class="cooperation__form">
-    <form class="form-cooperation" action="">
-      <div class="form-cooperation__title">Оставить <span>заявку</span></div>
-      <input
-        class="form-cooperation__input"
-        type="text"
-        id="form-cooperation-input"
-        name="form[]"
-        data-error="Ошибка"
-        data-required="name"
-        autocomplete="off"
-        placeholder="Введите имя"
-      />
-      <input
-        class="form-cooperation__input"
-        type="text"
-        id="form-cooperation-input"
-        name="form[]"
-        data-error="Ошибка"
-        data-required="phone"
-        autocomplete="off"
-        placeholder="Введите телефон"
-      />
-      <input
-        class="form-cooperation__input"
-        type="email"
-        id="form-cooperation-input"
-        name="form[]"
-        data-error="Ошибка"
-        data-required="email"
-        autocomplete="off"
-        placeholder="Введите почту"
-      />
-      <div class="form-cooperation__check checkbox">
-        <input
-          class="checkbox__input"
-          id="input-checkbox"
-          type="checkbox"
-          checked
-        />
-        <label class="checkbox__label" for="input-checkbox">
-          <span
-            >Я прочитал
-            <a href="politic.html" target="_blank">Условия соглашения</a> и
-            согласен с условиями
-          </span>
-        </label>
+  <div class="about__video">
+    <div class="story-video">
+
+      <video id="my-player" class="video-js story-video-object video-story" preload="auto" controls muted loop
+        poster="images/video/a1.png">
+        <source src="files/carservice.webm" type="video/webm">
+        </source>
+        <source src="files/carservice.mp4" type="video/mp4">
+        </source>
+        </p>
+      </video>
+      <div class="story-video-img">
+        <img src="images/bg-after/b01.png" alt="auto part" />
       </div>
-    </form>
-    <div class="form-cooperation__img">
-      <img src="images/bg-after/b02.png" alt="auto part" />
+    </div>
+
+  </div>
+</div></section>
+        </article>
+        <article>
+          <section><div class="services__container" id="servis">
+  <div class="services__body">
+    <h2 class="services__title">Услуги</h2>
+    <div class="services__slider">
+      <div class="services__swiper">
+        <div class="services__slide slide-services">
+          <article class="services-card">
+            <div class="services-card__body">
+              <div class="services-card__img">
+                <img src="images/services/z01.png" alt="auto part" />
+              </div>
+              <div class="services-card__title">Двигатель</div>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide slide-services">
+          <article class="services-card">
+            <div class="services-card__body">
+              <div class="services-card__img">
+                <img src="images/services/z02.png" alt="auto part" />
+              </div>
+              <div class="services-card__title">Электрика</div>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide slide-services">
+          <article class="services-card">
+            <div class="services-card__body">
+              <div class="services-card__img">
+                <img src="images/services/z03.png" alt="auto part" />
+              </div>
+              <div class="services-card__title">Ходовая часть</div>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide slide-services">
+          <article class="services-card">
+            <div class="services-card__body">
+              <div class="services-card__img">
+                <img src="images/services/z04.png" alt="auto part" />
+              </div>
+              <div class="services-card__title">Трансмиссия</div>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide slide-services">
+          <article class="services-card">
+            <div class="services-card__body">
+              <div class="services-card__img">
+                <img src="images/services/z05.png" alt="auto part" />
+              </div>
+              <div class="services-card__title">Детали кузова</div>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide slide-services">
+          <article class="services-card">
+            <div class="services-card__body">
+              <div class="services-card__img">
+                <img src="images/services/z06.png" alt="auto part" />
+              </div>
+              <div class="services-card__title">Механизмы управления</div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="services__dotts"></div>
+    </div>
+    <div class="services__buttons">
+      <a class="services__btn button popup-link" href="#popup-1">
+        <span>Подбор запчастей</span>
+        <img src="images/services-top/i-3-btn.png" alt="icon" />
+      </a>
+      <a class="services__btn button popup-link" href="#popup-2">
+        <span>Заказать звонок</span>
+        <img src="images/icons/call-btn.png" alt="icon" />
+      </a>
     </div>
   </div>
 </div>
 </section>
+        </article>
+        <article>
+          <section><div class="cooperation__container" id="cooperation">
+	<div class="cooperation__body">
+		<h2 class="cooperation__title">Сотрудничество</h2>
+		<div class="cooperation__text">
+			Приглашаем к сотрудничеству <span>СТО</span>. Гарантируем специальные
+			условия и приятные бонусы. Для получения детальной информации заполните
+			форму ниже и мы вам отправим интересное предложение сотрудничества.
+		</div>
+		<div class="wrapper-demo">
+			<div class="typing-demo">Вместе мы достигнем многого!!!</div>
+		</div>
+	</div>
+	<div class="cooperation__form form">
+		<!-- onsubmit="return checkForm1()" для формы -->
+		<form class="form-cooperation" id="form" action="telegram.php" method="POST" enctype="multipart/form-data">
+			<div id="divvv" class="form-cooperation__title">
+				Оставить <span>заявку</span>
+			</div>
+			<label class="form-cooperation__label">
+				<input class="form-cooperation__input" type="text" id="form-name" name="user_name" data-validate-field="name"
+					autocomplete="off" placeholder="Введите имя" />
+				<div id="nameError"></div>
+			</label>
+
+			<label class="form-cooperation__label">
+				<input class="form-cooperation__input" type="tel" id="form-phone" name="user_phone" data-validate-field="tel"
+					autocomplete="off" placeholder="Введите телефон" />
+			</label>
+			<label class="form-cooperation__label">
+				<input class="form-cooperation__input" type="email" id="form-email" name="user_email"
+					data-validate-field="email" autocomplete="off" placeholder="Введите почту" />
+			</label>
+			<div class="form-cooperation__check checkbox">
+				<input class="checkbox__input" id="form-checkbox" name="user_check" type="checkbox"
+					data-validate-field="checkbox" required checked />
+				<label class="checkbox__label" for="form-checkbox">
+					<span>Я прочитал
+						<a href="politic.html" target="_blank">Условия соглашения</a> и
+						согласен с условиями
+					</span>
+				</label>
+			</div>
+			<div class="form-cooperation__buttons">
+				<button class="form-cooperation__btn button" type="submit">
+					<span>Оставить заявку</span>
+				</button>
+			</div>
+			<div class="form-cooperation__img">
+				<img src="images/bg-after/b02.png" alt="auto part" />
+			</div>
+		</form>
+	</div>
+</div></section>
         </article>
         <article>
           <section><div class="partners__container">
@@ -757,7 +790,10 @@
           <article class="partners-card">
             <div class="partners-card__body">
               <div class="partners-card__img">
-                <img src="images/partners/mannfilter.png" alt="audi" />
+                <img
+                  src="images/partners/mann-filter_twittercard-preview.png"
+                  alt="audi"
+                />
               </div>
             </div>
           </article>
@@ -937,15 +973,783 @@
       </ul>
     </nav>
     <div class="footer__copy">
-      <div class="footer__copy-img">
-        <img src="images/icons/copy.png" alt="copy" />
+      <div class="footer__copy-body">
+        <div class="footer__copy-img">
+          <img src="images/icons/copy.png" alt="copy" />
+        </div>
+        <div class="footer__copy-text">Все права зашищены</div>
       </div>
-      <div class="footer__copy-text">Все права зашищены</div>
+      <div class="footer__copy-body">
+        <div class="footer__key-img">
+          <img src="images/icons/key.png" alt="key" />
+        </div>
+        <div class="footer__email-text">
+          Верстка
+          <a class="footer__email-link" href="mailto:vsepofic@gmail.com"
+            >vsepofic@gmail.com</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>
 </footer>
     </wrapper>
+    <section class="modal"><!-- modal - garage -->
+<div id="popup-1" class="popup">
+  <!-- <a href="#" class="popup__area"></a> -->
+  <div class="popup__body">
+    <div class="popup__content">
+      <div class="popup__img-close">
+        <a href="#" class="popup__close close-popup">
+          <img class="popup__img" src="images/icons/close.png" alt="close" />
+        </a>
+      </div>
+      <div class="popup__form">
+        <div class="cooperation__form form">
+          <!-- onsubmit="return checkForm1()" для формы -->
+          <form
+            class="form-cooperation form-cooperation-1"
+            id="formPopup1"
+            action="telegram-popup-1.php"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div id="divvv" class="form-cooperation__title">
+              Подобрать <span>запчасти</span>
+            </div>
+            <label class="form-cooperation__label">
+              <input
+                class="form-cooperation__input"
+                type="text"
+                id="form-name-1"
+                name="user_name"
+                data-validate-field="name"
+                autocomplete="off"
+                placeholder="Введите имя"
+              />
+              <div id="nameError1"></div>
+            </label>
+
+            <label class="form-cooperation__label">
+              <input
+                class="form-cooperation__input"
+                type="tel"
+                id="form-phone-1"
+                name="user_phone"
+                data-validate-field="tel"
+                autocomplete="off"
+                placeholder="Введите телефон"
+              />
+            </label>
+            <div class="form-cooperation__check checkbox">
+              <input
+                class="checkbox__input"
+                id="form-checkbox-1"
+                name="user_check"
+                type="checkbox"
+                data-validate-field="checkbox"
+                required
+                checked
+              />
+              <label class="checkbox__label" for="form-checkbox-1">
+                <span
+                  >Я прочитал
+                  <a href="politic.html" target="_blank">Условия соглашения</a>
+                  и согласен с условиями
+                </span>
+              </label>
+            </div>
+            <div class="form-cooperation__buttons">
+              <button class="form-cooperation__btn button" type="submit">
+                <span>Подбор запчастей</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="form-cooperation__img">
+            <img src="images/bg-after/b02.png" alt="auto part" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup-2" class="popup">
+  <!-- <a href="#" class="popup__area"></a> -->
+  <div class="popup__body">
+    <div class="popup__content">
+      <div class="popup__img-close">
+        <a href="#" class="popup__close close-popup">
+          <img class="popup__img" src="images/icons/close.png" alt="close" />
+        </a>
+      </div>
+      <div class="popup__form">
+        <div class="cooperation__form form">
+          <!-- onsubmit="return checkForm1()" для формы -->
+          <form
+            class="form-cooperation form-cooperation-2"
+            id="formPopup2"
+            action="telegram-popup-2.php"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div id="divvv" class="form-cooperation__title">
+              Заказать <span>звонок</span>
+            </div>
+            <label class="form-cooperation__label">
+              <input
+                class="form-cooperation__input"
+                type="text"
+                id="form-name-2"
+                name="user_name"
+                data-validate-field="name"
+                autocomplete="off"
+                placeholder="Введите имя"
+              />
+              <div id="nameError2"></div>
+            </label>
+
+            <label class="form-cooperation__label">
+              <input
+                class="form-cooperation__input"
+                type="tel"
+                id="form-phone-2"
+                name="user_phone"
+                data-validate-field="tel"
+                autocomplete="off"
+                placeholder="Введите телефон"
+              />
+            </label>
+            <div class="form-cooperation__check checkbox">
+              <input
+                class="checkbox__input"
+                id="form-checkbox-2"
+                name="user_check"
+                type="checkbox"
+                data-validate-field="checkbox"
+                required
+                checked
+              />
+              <label class="checkbox__label" for="form-checkbox-2">
+                <span
+                  >Я прочитал
+                  <a href="politic.html" target="_blank">Условия соглашения</a>
+                  и согласен с условиями
+                </span>
+              </label>
+            </div>
+            <div class="form-cooperation__buttons">
+              <button class="form-cooperation__btn button" type="submit">
+                <span>Заказать звонок</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="form-cooperation__img">
+            <img src="images/bg-after/iPhone.png" alt="auto part" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal-button -->
+
+<!-- <div class="modal-button">
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#login">
+        Логин
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#call">
+        Заказать звонок
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#pass">
+        Восстановление
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#register">
+        Зарегистрироваться
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#subscribe">
+        Подписка
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#check-phone">
+        Подтверждение
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#booking">
+        Бронь стола
+      </button>
+      <button class="mod" data-bs-toggle="modal" data-bs-target="#review">
+        Отзыв
+      </button>
+    </div> -->
+
+<!-- Modal basket -->
+
+<!-- <div class="basket-popap">
+      <span class="close-card-popup"></span>
+      <div class="card-basket">
+        <div class="container">
+          <div class="card-wrapper">
+            <div class="card-info">
+              <div class="card-column">
+                <h1>Корзина</h1>
+
+                <div class="card-top">
+                  <div class="card-product-item">
+                    <div class="card-product-left">
+                      <div class="card-product-remove">
+                        <img src="img/card-product/plus.svg" alt="" />
+                      </div>
+                      <div class="card-product-img">
+                        <img src="img/product/bng_.jpg" alt="" />
+                      </div>
+                      <div class="card-product-name">Хачапури 1</div>
+                    </div>
+                    <div class="card-product-right">
+                      <div class="card-product-toggle">
+                        <div class="input-range" data-desc="Ед. изм.: упаковка">
+                          <span class="minus">
+                            <img src="img/card/minus.svg" alt="minus" />
+                          </span>
+                          <input type="text" value="1 шт." />
+                          <span class="plus">
+                            <img src="img/card/plus.svg" alt="plus" />
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-product-price">350 ₽</div>
+                    </div>
+                  </div>
+                  <div class="card-product-item">
+                    <div class="card-product-left">
+                      <div class="card-product-remove">
+                        <img src="img/card-product/plus.svg" alt="" />
+                      </div>
+                      <div class="card-product-img">
+                        <img src="img/product/bng_.jpg" alt="" />
+                      </div>
+                      <div class="card-product-name">Хачапури 2</div>
+                    </div>
+                    <div class="card-product-right">
+                      <div class="card-product-toggle">
+                        <div class="input-range" data-desc="Ед. изм.: упаковка">
+                          <span class="minus">
+                            <img src="img/card/minus.svg" alt="minus" />
+                          </span>
+                          <input type="text" value="1 шт." />
+                          <span class="plus">
+                            <img src="img/card/plus.svg" alt="plus" />
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-product-price">350 ₽</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-sidebar-bottom">
+                  <div class="card-title">Промокод</div>
+                  <form action="">
+                    <input
+                      type="text"
+                      name="promo"
+                      placeholder="Введите промокод"
+                    />
+                    <button>Подтвердить</button>
+                  </form>
+                </div>
+
+                <div class="card-bottom">
+                  <div class="card-sidebar">
+                    <div class="purchase-info">
+                      <div class="purchase-title">
+                        Закажите на 3000 RUB и получите
+                      </div>
+                      <div class="purchase-line line1">
+                        <img src="img/card/pur1.svg" alt="" />
+                        <span><b>30 RUB</b> на бонусный счет</span>
+                      </div>
+                      <div class="purchase-line line2">
+                        <img src="img/card/pur2.svg" alt="" />
+                        <span><b>Бесплатная доставка</b></span>
+                      </div>
+                      <div class="range-slide">
+                        <div class="range-line" data-min="0" data-max="3000">
+                          <div class="green-line" style="width: 60%"></div>
+                          <div
+                            class="round"
+                            data-min="1000"
+                            data-text="(минимальный заказ)"
+                          ></div>
+                        </div>
+                        <div class="range-text">
+                          Осталось <b>1988 RUB</b> до бесплатной доставки
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-sidebar-top">
+                  <div class="card-title">Заказ №<span>47593</span></div>
+                  <div class="card-row">
+                    <div class="card-column">
+                      <div class="order-line">
+                        Сумма покупки<span>700 ₽</span>
+                      </div>
+                      <div class="order-line">
+                        Промокод<span class="promo">- 100 ₽</span>
+                      </div>
+                    </div>
+                    <div class="order-sum">
+                      Итого к оплате<span><b>600 ₽</b></span>
+                    </div>
+                  </div>
+                  <button class="pay-popap">Оформить заказ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal login -->
+
+<!-- <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-modal">
+              <img src="img/modal/person.svg" alt="" />
+              <div class="modal-name">Войти в личный кабинет</div>
+            </div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <input
+                    type="tel"
+                    class="phone"
+                    name=""
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="modal-row">
+                  <input
+                    type="password"
+                    class="pass"
+                    name=""
+                    placeholder="Пароль"
+                  />
+                </div>
+                <div class="forgot-pass">Забыли пароль?</div>
+                <button>Войти</button>
+              </form>
+              <div class="modal-txt">
+                Впервые у нас? <span>Зарегистрироваться</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal call -->
+
+<!-- <div
+      class="modal fade"
+      id="call"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-modal">
+              <img src="img/modal/person.svg" alt="" />
+              <div class="modal-name">Заказать звонок</div>
+            </div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <input
+                    type="tel"
+                    class="phone"
+                    name=""
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="modal-row">
+                  <input
+                    type="password"
+                    class="pass"
+                    name=""
+                    placeholder="Пароль"
+                  />
+                </div>
+                <div class="forgot-pass">Забыли пароль?</div>
+                <button>Войти</button>
+              </form>
+              <div class="modal-txt">
+                Впервые у нас? <span>Зарегистрироваться</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal pass -->
+
+<!-- <div
+      class="modal fade"
+      id="pass"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-modal">
+              <img src="img/modal/person.svg" alt="" />
+              <div class="modal-name">Восстановление пароля</div>
+            </div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <input
+                    type="tel"
+                    class="phone"
+                    name=""
+                    placeholder="Введите телефон"
+                  />
+                </div>
+                <div class="modal-row">
+                  <input
+                    type="password"
+                    class="pass"
+                    name=""
+                    placeholder="Пароль"
+                  />
+                </div>
+                <div class="modal-row">
+                  <input
+                    type="password"
+                    class="pass"
+                    name=""
+                    placeholder="Пароль"
+                  />
+                </div>
+                <div class="btn-block">
+                  <button
+                    class="decline"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Отменить
+                  </button>
+                  <button>Обновить пароль</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal register -->
+
+<!-- <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-modal">
+              <img src="img/modal/person.svg" alt="" />
+              <div class="modal-name">Регистрация</div>
+            </div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <input
+                    type="tel"
+                    class="phone"
+                    name=""
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="modal-row">
+                  <input
+                    type="password"
+                    class="pass"
+                    name=""
+                    placeholder="Пароль"
+                  />
+                </div>
+                <div class="modal-row">
+                  <input
+                    type="password"
+                    class="pass"
+                    name=""
+                    placeholder="Подтвердите пароль"
+                  />
+                </div>
+                <div class="error-txt">
+                  Пользователь с таким номером телефона уже зарегистрирован.
+                </div>
+                <div class="checkbox-block">
+                  <div class="checkbox-line">
+                    <input type="checkbox" id="check-mail" />
+                    <label for="check-mail"
+                      >Хочу получать выгодные предложения от магазина</label
+                    >
+                  </div>
+                  <div class="checkbox-line">
+                    <input type="checkbox" id="check-politic" checked />
+                    <label for="check-politic"
+                      >Принимаю условия
+                      <a href="#">Пользовательского соглашения</a>,
+                      <a href="#">Политики конфиденциальности</a></label
+                    >
+                  </div>
+                </div>
+                <button>Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Check-phone -->
+
+<!-- <div
+      class="modal fade"
+      id="check-phone"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-modal">
+              <img src="img/modal/person.svg" alt="" />
+              <div class="modal-name">Подтвердите номер телефона</div>
+            </div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-digit">
+                  <input type="text" class="" name="" maxlength="1" />
+                  <span></span>
+                  <input type="text" class="" name="" maxlength="1" />
+                  <span></span>
+                  <input type="text" class="" name="" maxlength="1" />
+                  <span></span>
+                  <input type="text" class="" name="" maxlength="1" />
+                </div>
+                <div class="send-check"> -->
+<!-- смена вида модалки при добавлении класса 'active' к 'send-check' -->
+<!-- <span>Отправить повторно</span>
+                  <b>1:59</b>
+                  <button>Далее</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal subscribe -->
+
+<!-- <div
+      class="modal fade"
+      id="subscribe"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-subscribe">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-modal">
+              <img src="img/modal/icon.svg" alt="" />
+              <div class="modal-subscribe-name">
+                Подпишитесь на нашу рассылку и получите промокод на 500 RUB!
+              </div>
+            </div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <input
+                    type="email"
+                    class="email"
+                    name=""
+                    placeholder="E-mail"
+                  />
+                </div>
+                <button>Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal booking -->
+
+<!-- <div
+      class="modal fade"
+      id="booking"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-big">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-booking">Бронирование стола</div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <input type="text" class="name" name="" placeholder="Имя" />
+                </div>
+                <div class="modal-flex-row">
+                  <input type="tel" class="" name="" placeholder="+380" />
+                  <input
+                    type="text"
+                    class=""
+                    name=""
+                    placeholder="Количество человек"
+                  />
+                </div>
+                <div class="modal-flex-row">
+                  <input
+                    type="text"
+                    class=""
+                    name=""
+                    placeholder="Время: _ _ : _ _"
+                  />
+                  <input
+                    type="date"
+                    class=""
+                    name=""
+                    placeholder="Дата:  дд.мм.гг"
+                  />
+                </div>
+                <button>Забронировать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Modal review -->
+
+<!-- <div
+      class="modal fade"
+      id="review"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog review">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="top-review">Добавить отзыв</div>
+            <div class="form">
+              <form action="" method="post">
+                <div class="modal-row">
+                  <b>Ваша оценка:</b>
+                  <div class="review-rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                  </div>
+                </div>
+                <div class="modal-row">
+                  <b>Ваше имя:</b>
+                  <input type="text" name="" placeholder="Введите Ваше имя" />
+                </div>
+                <div class="modal-row-textarea">
+                  <b>Ваш отзыв:</b>
+                  <textarea name="" id=""></textarea>
+                </div>
+                <button>Добавить отзыв</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+</section>
+
     <script src="js/app.min.js"></script>
   </body>
 </html>
