@@ -1953,6 +1953,7 @@ body.lock {
 
 .battery__text {
   margin-bottom: 1em;
+  margin-top: 100px;
 }
 
 .battery__text p {
@@ -5330,6 +5331,13 @@ button.swiper-pagination-bullet {
       );
   }
 
+  .battery__text {
+    margin-top: calc(
+        20px + 80 *
+          ((100vw - 320px) / 1280)
+      );
+  }
+
   .battery-images {
     height: calc(
         200px + 200 *
@@ -6724,6 +6732,10 @@ button.swiper-pagination-bullet {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .battery__text {
+    margin-top: 0;
   }
 
   .battery__box .battery__title {
