@@ -382,6 +382,10 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+ul li {
+  list-style: none;
+}
+
 img,
 svg {
   vertical-align: top;
@@ -1964,18 +1968,50 @@ body.lock {
   color: #f02828;
 }
 
-.battery__text ul {
+.battery__text .battery-list {
   width: 80%;
-  list-style: disc;
-  margin-left: 1.4285714286rem;
+  position: relative;
 }
 
-.battery__text ul span {
+.battery__text .battery-list span {
   color: #f02828;
 }
 
 .battery__box .battery__title {
   display: block;
+}
+
+.battery-li {
+  padding-left: 2.1428571429rem;
+  position: relative;
+}
+
+.battery-li::before {
+  content: "";
+  position: absolute;
+  width: 1.0714285714rem;
+  height: 1.0714285714rem;
+  top: 3px;
+  left: 0;
+  background: #f02828;
+  border-radius: 50%;
+}
+
+.no-webp .battery-li::after{
+  background: url("../images/icons/check.png") center/cover no-repeat; }
+
+.battery-li::after {
+  content: "";
+  position: absolute;
+  width: 1.0714285714rem;
+  height: 1.0714285714rem;
+  top: 0;
+  left: 2px;
+}
+
+.battery-li:not(:last-child) {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .battery__box {
@@ -5338,6 +5374,20 @@ button.swiper-pagination-bullet {
       );
   }
 
+  .battery-li:not(:last-child) {
+    margin-top: calc(
+        5px + 5 *
+          ((100vw - 320px) / 1280)
+      );
+  }
+
+  .battery-li:not(:last-child) {
+    margin-bottom: calc(
+        5px + 5 *
+          ((100vw - 320px) / 1280)
+      );
+  }
+
   .battery-images {
     height: calc(
         200px + 200 *
@@ -7489,6 +7539,10 @@ button.swiper-pagination-bullet {
     width: 100%;
   }
 
+  .battery__text .battery-list {
+    width: 100%;
+  }
+
   .wheel__text p {
     width: 100%;
   }
@@ -7929,6 +7983,8 @@ button.swiper-pagination-bullet {
 .webp .main-top__text::after{ background: url(../images/icons/check.webp) center/cover no-repeat; }
 
 .webp .battery__body::before{ background: url(../images/bg-auto/a5.webp) center/cover no-repeat; }
+
+.webp .battery-li::after{ background: url(../images/icons/check.webp) center/cover no-repeat; }
 
 .webp .wheel__body::before{ background: url(../images/bg-auto/a7.webp) center/cover no-repeat; }
 
